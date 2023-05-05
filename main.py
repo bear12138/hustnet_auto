@@ -55,7 +55,7 @@ def ping(host, n):
         n,
         host,
     )
-    return 0 == subprocess.call(cmd,shell=True)
+    return 0 == subprocess.call(cmd,shell=True)#这里os.systeam会出现黑窗口，且必须加shell=TRue，负责乱码报错误信息
 
 
 def pong():
